@@ -1,6 +1,5 @@
 const container = document.getElementById("sketch-container");
-
-let gridNum = 16;
+document.getElementById("grid-size").addEventListener("click", () => { updateGrid() });
 
 function createGrid(gridNum){
      for (let i = 0; i < gridNum; i++) {
@@ -15,4 +14,14 @@ function createGrid(gridNum){
      }
 }
 
-createGrid(gridNum);
+function updateGrid(){
+     const userResponse = prompt("Choose a grid size between 5 and 100");
+
+     if (userResponse < 5 || userResponse > 100) {
+          alert("Choose a number between 5 and 100");
+     }
+     container.querySelectorAll("div").forEach(e => e.remove());
+     createGrid(parseInt(userResponse));
+}
+
+createGrid(16);

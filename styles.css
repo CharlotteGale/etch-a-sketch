@@ -1,30 +1,47 @@
 body {
+     padding: 20px;
+     background-color: rgba(173, 172, 172, 0.886);
+}
+body,
+#grid-size {
+     font-family: 'Open Sans', sans-serif;
+}
+h1 {
+     text-align: center;
+}
+.ui-container {
      display: flex;
      justify-content: center;
      align-items: center;
-     flex-direction: column;
 }
-
+.title {
+     display: block;
+}
 #sketch-container {
      display: flex;
      flex-direction: column;
      flex-wrap: wrap;
-     width: 600px;
-     height: 600px;
+     width: 500px;
+     height: 500px;
+     background-color: rgb(234, 229, 222);
 }
-
 .row {
      display: flex;
      flex-grow: 1;
 }
-
 .square {
      display: flex;
      flex-grow: 1;
-     border: 1px solid black;
      box-sizing: border-box;
 }
-
 .square:hover {
      background-color: rgb(29, 95, 29);
+}
+#btn-container {
+     margin: auto;
+}
+#grid-size {
+     background-color: rgba(44, 144, 44, 0.896);
+     border-radius: 5px;
+     padding: 5px;
 }
