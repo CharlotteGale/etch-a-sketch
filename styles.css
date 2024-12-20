@@ -1,0 +1,30 @@
+body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+
+#sketch-container {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     width: 600px;
+     height: 600px;
+}
+
+.row {
+     display: flex;
+     flex-grow: 1;
+}
+
+.square {
+     display: flex;
+     flex-grow: 1;
+     border: 1px solid black;
+     box-sizing: border-box;
+}
+
+.square:hover {
+     background-color: rgb(29, 95, 29);
+}
